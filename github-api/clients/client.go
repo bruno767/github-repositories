@@ -8,13 +8,13 @@ import (
 )
 
 type GitRepository struct {
-	Id          int                    `json:"id"`
-	Name        string                 `json:"name"`
-	Full_name   string                 `json:"full_name"`
-	Private     bool                   `json:"private"`
-	Description string                 `json:"description"`
-	Git_url     string                 `json:"git_url"`
-	Language    string                 `json:"language"`
+	Id          int    `json:"id"`
+	Name        string `json:"name"`
+	Full_name   string `json:"full_name"`
+	Private     bool   `json:"private"`
+	Description string `json:"description"`
+	Html_url    string `json:"html_url"`
+	Language    string `json:"language"`
 }
 
 type GithubClient struct {

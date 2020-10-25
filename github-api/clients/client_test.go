@@ -17,7 +17,7 @@ func TestGithubClient_GetRepositories_200(t *testing.T) {
 			Full_name:   "testFullName",
 			Private:     false,
 			Description: "TestDesc",
-			Git_url:     "www.someurl.com",
+			Html_url:    "www.someurl.com",
 			Language:    "go",
 		},
 	}

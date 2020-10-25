@@ -13,7 +13,7 @@ func main() {
 
 	router := setupRouter()
 
-	err := router.Run(":8080")
+	err := router.Run(":8090")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -32,6 +32,7 @@ func getRepositories(c *gin.Context) {
 			Client: goHttp.Client{},
 			Url:    "https://api.github.com"}
 	gitRepositories, err := client.GetRepositories()
+	c.Header("Access-Control-Allow-Origin", "*")
 	if err != nil {
 		c.String(500, err.Error())
 	}
