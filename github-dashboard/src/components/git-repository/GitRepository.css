@@ -1,0 +1,48 @@
+a {
+    color: dimgray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #282c34;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.git-repository {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 30%;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.git-repository:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.github {
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+}
+
+.name {
+    align-self: flex-start;
+}
+
+.language {
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.description {
+    text-align: left;
+    margin-top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}

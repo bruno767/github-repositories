@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -25,6 +25,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/git-repositories" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -42,6 +43,26 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="should render the component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="should render the component" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.should render the component" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603492886333</updated>
-      <workItem from="1603492887369" duration="27032000" />
+      <workItem from="1603492887369" duration="28708000" />
     </task>
     <servers />
   </component>
@@ -58,29 +79,29 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1603557367582">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1603655563890">
       <screen x="-1920" y="-157" width="1920" height="1057" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1603557367582" />
-    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1603557367582">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1603655563890" />
+    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1603655563889">
       <screen x="-1920" y="-157" width="1920" height="1057" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.center/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1603557367582" />
-    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1603557367581">
+    <state width="1899" height="285" key="GridCell.Tab.0.center/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1603655563889" />
+    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1603655563888">
       <screen x="-1920" y="-157" width="1920" height="1057" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.left/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1603557367581" />
-    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1603557367582">
+    <state width="1899" height="285" key="GridCell.Tab.0.left/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1603655563888" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1603655563889">
       <screen x="-1920" y="-157" width="1920" height="1057" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.right/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1603557367582" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1603655563889" />
     <state x="-1252" y="110" width="584" height="522" key="find.popup" timestamp="1603634167843">
       <screen x="-1920" y="-157" width="1920" height="1057" />
     </state>
     <state x="-1252" y="110" width="584" height="522" key="find.popup/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1603634167843" />
-    <state x="-1295" y="78" width="670" height="676" key="search.everywhere.popup" timestamp="1603650032000">
+    <state x="-1295" y="78" width="670" height="676" key="search.everywhere.popup" timestamp="1603655503842">
       <screen x="-1920" y="-157" width="1920" height="1057" />
     </state>
-    <state x="-1295" y="78" width="670" height="676" key="search.everywhere.popup/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1603650032000" />
+    <state x="-1295" y="78" width="670" height="676" key="search.everywhere.popup/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1603655503842" />
   </component>
 </project>
