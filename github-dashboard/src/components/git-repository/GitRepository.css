@@ -8,19 +8,27 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+.git-repository-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    color: dimgray;
+    padding: 15px;
+}
+
+.git-repository-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    color: #282c34;
+    cursor: pointer;
+}
 
 .git-repository {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 30%;
-    margin-bottom: 15px;
-    padding: 15px;
-}
-
-.git-repository:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .github {
@@ -45,4 +53,17 @@ a:hover {
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 100%;
+}
+
+.commits {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    height: 0;
+    overflow: auto;
+}
+
+.commits.true {
+    height: 200px;
+    border-top: dimgrey 1px solid;
 }

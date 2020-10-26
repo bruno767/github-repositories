@@ -1,25 +1,10 @@
 import React from 'react';
 import App from './App';
-import { render, unmountComponentAtNode } from "react-dom";
-import { act } from "react-dom/test-utils";
+import { render } from '@testing-library/react';
+import {test} from "@jest/globals";
 
-let container = null;
-beforeEach(() => {
-  // setup a DOM element as a render target
-  container = document.createElement("div");
-  document.body.appendChild(container);
-});
-
-afterEach(() => {
-  // cleanup on exiting
-  unmountComponentAtNode(container);
-  container.remove();
-  container = null;
-});
-
-it("should render the component", () => {
-  act(() => {
-    render(<App />, container);
-  });
-  expect(container.textContent).toBe("Git repositories");
+test('should render App', () => {
+  const { getByText } = render(<App/>);
+  const title = getByText(/Git repositories/i);
+  expect(title).toBeInTheDocument();
 });

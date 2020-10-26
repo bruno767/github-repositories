@@ -3,5 +3,10 @@
     flex-direction: row;
     padding: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
 }
