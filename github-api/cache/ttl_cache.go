@@ -1,34 +1,34 @@
 package cache
 
 import (
+	"github.com/hashicorp/golang-lru"
 	"log"
 	"time"
-	"github.com/hashicorp/golang-lru"
 )
 
-func NewTTLCache(ttl time.Duration, size int) *ttlCache {
+func NewTTLCache(ttl time.Duration, size int) *TtlCache {
 	v, err := lru.NewARC(size)
 	if err != nil {
 		log.Fatal(err)
 	}
-	t := ttlCache{
+	t := TtlCache{
 		ttl:   ttl,
 		cache: v,
 	}
 	return &t
 }
 
-type ttlCache struct {
+type TtlCache struct {
 	ttl   time.Duration
 	cache *lru.ARCCache
 }
 
-func (r *ttlCache) Put(key string, val interface{}) error {
+func (r *TtlCache) Put(key string, val interface{}) error {
 	r.cache.Add(key, &entry{val: val, expires: time.Now().Add(r.ttl)})
 	return nil
 }
 
-func (r *ttlCache) Get(key string) (interface{}, error) {
+func (r *TtlCache) Get(key string) (interface{}, error) {
 	v, found := r.cache.Get(key)
 	if found {
 		e := v.(*entry)

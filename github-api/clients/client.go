@@ -1,6 +1,7 @@
 package clients
 
 import (
+	"../cache"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -34,8 +35,9 @@ type Author struct {
 
 type GithubClient struct {
 	Client          http.Client
+	TtlCache        *cache.TtlCache
 	GitRepositories *[]GitRepository
-	GitCommits       *[]GitCommit
+	GitCommits      *[]GitCommit
 	Url             string
 }
 
@@ -84,7 +86,6 @@ func (gc *GithubClient) GetCommits(repo string) ([]GitCommit, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed reading response body : %s", err.Error())
 	}
-
 
 	return *gc.GitCommits, err
 }
